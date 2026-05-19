@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tubes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budaya Singapore</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
 </head>
+
 <body>
-    
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="logo">
+    </div>
+
+    <ul class="menu">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Sejarah</a></li>
+
+      <li class="dropdown">
+        <a href="#">Budaya ▼</a>
+      </li>
+
+      <li><a href="#">Wisata</a></li>
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="banner">
+    <img src="/img/cover.png" alt="cover">
+  </section>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Selamat Datang di Website <br>
+        Budaya Singapure
+      </h1>
+
+      <p class="typing">
+        Merupakan Sistem Informasi Pemajuan Kebudayaan Singapura
+      </p>
+    </div>
+
+    <div class="hero-image">
+      <img src="/img/bg2-beranda.png" alt="">
+    </div>
+  </section>
+    <div class="cursor"></div>
+
+  <script>
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.top = e.clientY + 'px';
+      cursor.style.left = e.clientX + 'px';
+    });
+  </script>
 </body>
 </html>
