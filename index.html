@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Budaya Singapore</title>
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="/img/logo.png" alt="logo">
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+  <script src="darkmode.js"></script>
+    <div class="container">
+      
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="logo" height="40">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        
+        <ul class="navbar-nav ms-auto fw-bold gap-lg-3">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="sejarah.html">Sejarah</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              Budaya
+            </a>
+            <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item" href="budaya.html/">Tionghoa</a></li>
+              <li><a class="dropdown-item" href="#">Melayu</a></li>
+              <li><a class="dropdown-item" href="#">India</a></li>
+              <li><a class="dropdown-item" href="#">Peranakan</a></li>
+              <li><a class="dropdown-item" href="#">Eurasia</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Wisata</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">About</a></li>
+          
+        </ul>
+      </div>
     </div>
-
-    <ul class="menu">
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">Sejarah</a></li>
-
-      <li class="dropdown">
-        <a href="#">Budaya ▼</a>
-      </li>
-
-      <li><a href="#">Wisata</a></li>
-      <li><a href="#">Galeri</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
   </nav>
 
   <section class="banner">
-    <img src="/img/cover.png" alt="cover">
+    <img src="img/cover.png" alt="cover">
   </section>
 
   <section class="hero">
@@ -45,9 +69,121 @@
     </div>
 
     <div class="hero-image">
-      <img src="/img/bg2-beranda.png" alt="">
+      <img src="img/bg2-beranda.png" alt="">
     </div>
   </section>
+  <!-- Section Pengenalan Singkat -->
+  <section class="pengantar">
+    <div class="container">
+      <div class="pengantar-content">
+        <h2>Sekilas Tentang Singapura</h2>
+        <hr class="garis-judul opacity-75">
+        <p>
+          Dikenal luas sebagai <strong>"Kota Singa"</strong>, Singapura adalah sebuah negara kepulauan sekaligus negara kota di Asia Tenggara. Meskipun memiliki wilayah yang terbilang mungil, Singapura telah bertransformasi secara luar biasa dari sebuah desa nelayan dan pelabuhan dagang kuno menjadi salah satu pusat ekonomi, inovasi, serta pariwisata paling maju di dunia.
+        </p>
+        <p>
+          Daya tarik utama Singapura terletak pada perpaduan harmoni yang kontras: tata kota futuristik yang menyatu dengan ruang terbuka hijau yang subur, serta keberagaman etnis—Tionghoa, Melayu, India, dan Eurasia—yang hidup rukun sambil terus melestarikan warisan budaya leluhur mereka.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="highlight py-5 bg-light text-center">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-3">Eksplorasi Singapura</h2>
+      <p class="text-secondary mb-5">Temukan pesona sejarah, ragam budaya, dan destinasi wisata memukau di Kota Singa.</p>
+      
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card">
+            <div class="display-4 mb-3">📜</div>
+            <h3 class="h5 fw-bold">Sejarah Singkat</h3>
+            <p class="text-secondary mb-4">Dari sebuah desa nelayan kecil hingga menjadi salah satu negara paling maju di dunia.</p>
+            <a href="sejarah.html" class="btn btn-danger rounded-pill mt-auto px-4">Baca Sejarah</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card">
+            <div class="display-4 mb-3">🎭</div>
+            <h3 class="h5 fw-bold">Ragam Budaya</h3>
+            <p class="text-secondary mb-4">Eksplorasi perpaduan harmonis antara budaya Tionghoa, Melayu, India, dan Peranakan.</p>
+            <a href="budaya.html" class="btn btn-danger rounded-pill mt-auto px-4">Kenali Budaya</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4 text-center custom-card">
+            <div class="display-4 mb-3">🎡</div>
+            <h3 class="h5 fw-bold">Destinasi Wisata</h3>
+            <p class="text-secondary mb-4">Kunjungi landmark ikonik kelas dunia seperti Marina Bay Sands dan Gardens by the Bay.</p>
+            <a href="#wisata" class="btn btn-danger rounded-pill mt-auto px-4">Eksplorasi Wisata</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section class="lokasi">
+    <div class="container">
+      <h2>Peta Singapura</h2>
+      <p>Jelajahi letak geografis negara kota Singapura di bawah ini.</p>
+      
+      <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.22560379928!2d103.67909687658268!3d1.3139945931580126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapura!5e0!3m2!1sid!2sid!4v1780146672188!5m2!1sid!2sid" 
+          width="800" 
+          height="600" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-danger mb-3">Budaya Singapura</h5>
+        <p class="text-white-50" style="line-height: 1.8;">
+          Sistem Informasi Pemajuan Kebudayaan Singapura. Proyek ini disusun sebagai pemenuhan Tugas Besar Web Dasar tahun ajaran 2025/2026.
+        </p>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold mb-3">Tautan Cepat</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+          <li class="mb-2"><a href="sejarah.html" class="text-white-50 text-decoration-none">Sejarah</a></li>
+          <li class="mb-2"><a href="budaya.html" class="text-white-50 text-decoration-none">Budaya & Tradisi</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold mb-3">Waktu Singapura</h5>
+        <div class="p-3 bg-secondary bg-opacity-25 rounded border border-secondary text-center">
+          <p id="tanggal-singapura" class="text-white fw-semibold font-montserrat mb-0">01/01/2000</p>
+          <span id="jam-singapura" class="fs-3 fw-bold font-monospace text-warning">00:00:00</span>
+          <div class="text-white-50 small">SGT (Singapore Time)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-dark my-4 opacity-100">
+
+    <div class="text-center text-white-50 small">
+      <p class="mb-2">&copy; <span id="tahun-automatic"></span> Hak Cipta Dilindungi.</p>
+      <p class="mb-0 text-white">
+        <strong>2572013</strong> Kenneth Ansell Hansjaya &nbsp;|&nbsp; 
+        <strong>2572015</strong> Steven Theodore Alden &nbsp;|&nbsp; 
+        <strong>2572047</strong> Kevin Wijaya
+      </p>
+    </div>
+  </div>
+</footer>
     <div class="cursor"></div>
+    
 </body>
 </html>
