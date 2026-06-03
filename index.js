@@ -34,7 +34,7 @@ function JamDigitalSingapura() {
       day: '2-digit'
     };
     const tanggalSGT = new Intl.DateTimeFormat('en-US', opsiTanggal).format(new Date());
-    elemenTanggal.textContent = tanggalSGT.replace(/\//g, ' - '); // Menambahkan spasi di sekitar tanda hubung
+    elemenTanggal.textContent = tanggalSGT.replace(/\./g, ' - '); // Menambahkan spasi di sekitar tanda hubung
   }
 }
 setInterval(JamDigitalSingapura, 1000);
