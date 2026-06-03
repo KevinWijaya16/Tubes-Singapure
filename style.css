@@ -1,68 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background: #f8f8f8;
 }
 
-.navbar{
-  width: 100%;
-  height: 80px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
-  border-top: 4px solid #008cff;
+.navbar-nav .nav-link:hover {
+  color: #dc3545 !important; /* Warna merah khas Bootstrap (danger) */
 }
 
-.logo img{
+.logo img {
   width: 100px;
   height: auto;
 }
 
-.menu{
-  display: flex;
-  list-style: none;
-  margin-right: auto;
-  margin-left: 30px;
+.btn-danger {
+  transition: transform 0.2s ease;
 }
 
-.menu li{
-  margin: 0 20px;
+.btn-danger:hover {
+  transform: scale(1.05);
 }
 
-.menu li a{
-  text-decoration: none;
-  color: #140a74;
-  font-size: 18px;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.menu li a:hover{
-  color: #008cff;
-}
-
-.banner{
+.banner {
   width: 100%;
-  height: 180px;
+  height: 230px;
   overflow: hidden;
 }
 
-.banner img{
+.banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.hero{
+.hero {
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -71,84 +49,183 @@ body{
   padding: 50px 80px;
 }
 
-.hero-text h1{
+.hero-text h1 {
   font-size: 58px;
   color: #120a73;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-.hero-text p{
+.hero-text p {
   font-size: 22px;
   color: black;
 }
 
-.hero-text{
+.hero-text {
   opacity: 0;
   animation: fadeKiri 1.5s ease forwards;
 }
 
-.hero-image{
+.hero-image {
   opacity: 0;
   animation: fadeKanan 1.5s ease forwards;
 }
 
-@keyframes fadeKiri{
-  0%{
+@keyframes fadeKiri {
+  0% {
     opacity: 0;
     transform: translateX(-100px);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes fadeKanan{
-  0%{
+@keyframes fadeKanan {
+  0% {
     opacity: 0;
     transform: translateX(100px);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-.typing{
+.typing {
   overflow: hidden;
   white-space: nowrap;
   width: 0;
   animation: mengetik 4s steps(55) forwards;
 }
 
-@keyframes mengetik{
-  from{
+@keyframes mengetik {
+  from {
     width: 0;
   }
 
-  to{
+  to {
     width: 100%;
   }
 }
+.singapura{
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  
+}
+.isi {
+  padding: 80px 20px;
+  background-color: #fcfcfc;
+  text-align: center;
+}
 
-.menu li a{
+.isi h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* --- Styling Section Pengantar Singkat --- */
+.pengantar {
+  padding: 70px 20px 40px; 
+  background-color: #ffffff;
+  text-align: center; 
+}
+
+/* Membatasi lebar teks agar lebih nyaman dibaca (tidak terlalu memanjang) */
+.pengantar-content {
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+.pengantar-content h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 25px;
   position: relative;
+  display: inline-block;
 }
 
-.menu li a::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 3px;
-  background: #008cff;
-  transition: 0.4s;
+/* Garis hiasan kecil di bawah judul agar terlihat lebih elegan */
+.pengantar-content h2 {
+  display: inline-block;
+  font-size: 2.2rem;
+  color: #333;
+}
+.garis-judul{
+  width: 60px;
+  height: 4px;
+  background-color: #e63946;
+  border:none;
+  margin: 0 auto 10px;
 }
 
-.menu li a:hover::after{
+.pengantar-content p {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.77; 
+  margin-bottom: 20px;
+  text-align: justify; 
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Bagian Lokasi */
+.lokasi {
+  padding: 80px 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.lokasi h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lokasi p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+/* Map terlihat lebar */
+.map-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-wrapper iframe {
+  display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .pengantar-content p {
+    text-align: center; 
+    font-size: 1.05rem;
+  }
 }

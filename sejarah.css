@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  /* Sesuaikan angkanya dengan perkiraan tinggi navbar kamu */
+  scroll-padding-top: 90px; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+.navbar-nav .nav-link:hover {
+  color: #dc3545 !important; /* Warna merah khas Bootstrap (danger) */
+}
+/* --- Styling untuk Hero Bergambar --- */
+.hero-bergambar {
+  /* Ganti tulisan img/gambar-kamu.jpg dengan lokasi gambar aslimu */
+    background-image: url('img/bannersejarah.jpg'); 
+    background-size: cover; /* Memastikan gambar memenuhi seluruh kotak */
+    background-position: center 15%; /* Memastikan gambar berada tepat di tengah */
+    background-repeat: no-repeat;
+    border-radius: 15px; /* Opsional: memberikan efek sudut melengkung karena ada margin m-md-3 di HTML */
+}
+
+/* --- Styling untuk Lapisan Gelap --- */
+.overlay-gelap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Warna hitam dengan tingkat transparansi 60% */
+  z-index: 0; 
+}
+.gambar1 {
+  width: 100%;
+  height: auto;
+  
+  border-radius: 15px; /* Opsional: memberikan efek sudut melengkung karena ada margin m-md-3 di HTML */
+}
+
+p.mb-3 {
+    text-align: justify;
+    line-height: 1.8;
+}
+.btn-ke-atas {
+  position:fixed; /* Membuatnya melayang mengikuti layar */
+  bottom: 30px; /* Jarak dari bawah */
+  right: 30px; /* Jarak dari kanan */
+  background-color: #fff; /* Warna merah Bootstrap */
+  color: #000;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%; /* Membuat tombol menjadi bulat sempurna */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Memastikan tombol selalu ada di layer paling depan */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efek saat tombol disorot (hover) */
+.btn-ke-atas:hover {
+  background-color: #b02a37; /* Merah gelap */
+  color: #ffffff;
+  transform: translateY(-4px); /* Tombol sedikit terangkat */
+}
