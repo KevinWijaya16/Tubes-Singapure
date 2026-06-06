@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Singapura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="wisata.css">
+</head>
+<body id="top">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="logo" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold gap-lg-3">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="sejarah.html">Sejarah</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Budaya</a>
+            <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item" href="budaya.html/">Tionghoa</a></li>
+              <li><a class="dropdown-item" href="#">Melayu</a></li>
+              <li><a class="dropdown-item" href="#">India</a></li>
+              <li><a class="dropdown-item" href="#">Peranakan</a></li>
+              <li><a class="dropdown-item" href="#">Eurasia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="wisata.html">Wisata</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Galeri</a>
+            <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item" href="galeriwisata.html">Wisata</a></li>
+              <li><a class="dropdown-item" href="galeribudaya.html">Budaya</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center hero-bergambar">
+    <div class="overlay-gelap"></div>
+    <div class="col-md-6 p-lg-5 mx-auto my-5 position-relative z-1">
+      <h1 class="display-3 fw-bold text-white">Wisata Singapura</h1>
+      <h3 class="fw-normal text-white-50 mb-3">
+        Destinasi ikonik di jantung Kota Singa yang mendunia
+      </h3>
+      <button onclick="location.href='#mulai'" class="btn btn-danger mb-5">Mari Mulai</button>
+    </div>
+  </div>
+
+  <section class="pengantar py-5 bg-light">
+    <div class="container text-center">
+      <a name="mulai"><h1 class="fw-bold pt-3 pb-4">Destinasi Wisata Singapura</h1></a>
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 text-info-emphasis">
+          <p class="mb-3">Singapura adalah salah satu tujuan wisata paling populer di dunia. Meskipun luasnya hanya sekitar 733 km², negara kota ini menawarkan pengalaman wisata yang luar biasa beragam — mulai dari taman futuristik, kawasan budaya yang kaya sejarah, wahana hiburan kelas dunia, hingga surga kuliner yang telah diakui UNESCO.</p>
+          <p class="mb-3">Setiap sudut Singapura dirancang dengan cermat untuk memadukan modernitas dan warisan budaya. Wisatawan dari seluruh penjuru dunia datang untuk menyaksikan keajaiban arsitektur, merasakan keberagaman etnis, dan menikmati pengalaman kuliner yang tak tertandingi.</p>
+        </div>
+      </div>
+      <p class="fs-4">Klik link ini untuk langsung ke bagiannya</p>
+      <p class="pb-4">
+        <a href="#marinabay" class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Marina Bay</a> |
+        <a href="#sentosa" class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Sentosa Island</a> |
+        <a href="#budaya" class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Kawasan Budaya</a> |
+        <a href="#alam" class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Taman &amp; Alam</a>
+      </p>
+      <a href="#tips" class="link-primary link-underline-opacity-0 link-underline-opacity-50-hover"><p class="fw-bold fs-5">Tips Wisata bisa dipencet sebelah sini</p></a>
+    </div>
+    <hr class="mx-auto border-danger border-3 opacity-75">
+  </section>
+
+  <section class="py-5 pb-3">
+    <div class="container">
+
+      <a name="marinabay"><div class="row align-items-center mb-5"></a>
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="bg-secondary rounded shadow-sm d-flex justify-content-center align-items-center gambar1" style="height: 400px;">
+            <img src="img/marinabay.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 400px; object-fit: cover;" alt="Marina Bay Sands">
+          </div>
+        </div>
+        <div class="col-md-6 px-md-5">
+          <span class="badge bg-danger mb-2">Ikon Singapura</span>
+          <h2 class="fw-bold mb-3">Marina Bay Sands</h2>
+          <p class="mb-3">Marina Bay Sands adalah kompleks resort terintegrasi yang menjadi ikon paling dikenal di Singapura. Dibangun di atas lahan reklamasi seluas 15,5 hektare, bangunan ini terdiri dari tiga menara setinggi 55 lantai yang dihubungkan oleh platform raksasa berbentuk kapal yang disebut SkyPark.</p>
+          <p class="mb-3">Di puncak bangunan terdapat infinity pool sepanjang 150 meter yang menawarkan pemandangan cakrawala kota paling spektakuler di Asia. Selain hotel mewah, Marina Bay Sands juga menampung pusat perbelanjaan premium, kasino terbesar di Asia, teater, dan museum seni ArtScience Museum yang berbentuk seperti bunga teratai.</p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="bg-secondary rounded shadow-sm d-flex justify-content-center align-items-center" style="height: 400px;">
+            <img src="img/gardens.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 400px; object-fit: cover;" alt="Gardens by the Bay">
+          </div>
+        </div>
+        <div class="col-md-6 px-md-5">
+          <span class="badge bg-danger mb-2">Taman Futuristik</span>
+          <h2 class="fw-bold mb-3">Gardens by the Bay</h2>
+          <p class="mb-3">Gardens by the Bay adalah taman seluas 101 hektare yang telah menjadi simbol keberlanjutan lingkungan Singapura. Taman ini menampilkan 18 Supertree — struktur vertikal setinggi 25–50 meter yang ditumbuhi ribuan tanaman tropis dan dilengkapi panel surya serta sistem pengumpul air hujan.</p>
+          <p class="mb-3">Di dalam taman terdapat dua kubah konservasi berteknologi tinggi: Flower Dome yang menampilkan tanaman dari iklim Mediterania, dan Cloud Forest yang menghadirkan ekosistem dataran tinggi tropis dengan air terjun indoor setinggi 35 meter. Pada malam hari, pertunjukan cahaya "Garden Rhapsody" menyulap Supertree menjadi panggung visual yang memukau.</p>
+        </div>
+      </div>
+
+      <a name="sentosa"><div class="row align-items-center mb-5"></a>
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="bg-secondary rounded shadow-sm d-flex justify-content-center align-items-center gambar1" style="height: 400px;">
+            <img src="img/sentosa.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 400px; object-fit: cover;" alt="Sentosa Island">
+          </div>
+        </div>
+        <div class="col-md-6 px-md-5">
+          <span class="badge bg-danger mb-2">Pulau Hiburan</span>
+          <h2 class="fw-bold mb-3">Sentosa Island</h2>
+          <p class="mb-3">Sentosa adalah pulau resor seluas 500 hektare yang telah bertransformasi dari bekas pangkalan militer Inggris menjadi taman hiburan terkemuka di Asia. Pulau ini dapat dicapai dengan monorail, cable car, jembatan berjalan, atau taksi dari daratan Singapura.</p>
+          <p class="mb-3">Sentosa menampung Universal Studios Singapore — taman hiburan berlisensi resmi dengan wahana berbasis film Hollywood. Selain itu tersedia S.E.A. Aquarium yang menampung lebih dari 100.000 hewan laut, Adventure Cove Waterpark, pantai-pantai berpasir putih buatan, serta kawasan Resorts World Sentosa dengan hotel dan kasino kelas dunia.</p>
+        </div>
+      </div>
+
+      <a name="budaya"><div class="row align-items-center mb-5 flex-md-row-reverse"></a>
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="bg-secondary rounded shadow-sm d-flex justify-content-center align-items-center" style="height: 400px;">
+            <img src="img/chinatown.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 400px; object-fit: cover;" alt="Chinatown">
+          </div>
+        </div>
+        <div class="col-md-6 px-md-5">
+          <span class="badge bg-danger mb-2">Warisan Budaya</span>
+          <h2 class="fw-bold mb-3">Kawasan Budaya: Chinatown, Little India &amp; Kampong Glam</h2>
+          <p class="mb-3">Singapura menyimpan tiga kawasan budaya bersejarah yang mencerminkan kemajemukan etnisnya. <strong>Chinatown</strong> dengan kuil Buddha Tooth Relic, deretan ruko klasik, dan pasar malam yang ramai. <strong>Little India</strong> dengan warna-warni toko bunga, kuil Sri Veeramakaliamman, dan aroma rempah yang khas.</p>
+          <p class="mb-3"><strong>Kampong Glam</strong> adalah kawasan Melayu-Arab dengan Masjid Sultan yang megah, serta Haji Lane — gang sempit penuh mural seni dan butik unik yang menjadi surga para pecinta budaya dan fotografi. Ketiga kawasan ini mudah dijangkau dengan MRT dan bisa dieksplorasi dalam satu hari.</p>
+        </div>
+      </div>
+
+      <a name="alam"><div class="row align-items-center mb-5"></a>
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="bg-secondary rounded shadow-sm d-flex justify-content-center align-items-center gambar1" style="height: 400px;">
+            <img src="img/zoo.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 400px; object-fit: cover;" alt="Singapore Zoo">
+          </div>
+        </div>
+        <div class="col-md-6 px-md-5">
+          <span class="badge bg-danger mb-2">Alam &amp; Satwa</span>
+          <h2 class="fw-bold mb-3">Singapore Zoo &amp; Mandai Wildlife Reserve</h2>
+          <p class="mb-3">Singapore Zoo diakui sebagai salah satu kebun binatang terbaik di dunia berkat konsep "open zoo" yang meniadakan kandang tertutup. Satwa hidup di habitat yang menyerupai alam liar, dipisahkan dari pengunjung menggunakan parit dan vegetasi alami sehingga menciptakan pengalaman yang imersif.</p>
+          <p class="mb-3">Kawasan Mandai Wildlife Reserve juga menampung Night Safari — safari malam pertama di dunia — serta Jurong Bird Park dengan koleksi burung terlengkap di Asia. Ditambah Singapore Botanic Gardens yang telah menjadi Situs Warisan Dunia UNESCO, Singapura membuktikan bahwa kota modern dan alam dapat hidup berdampingan secara harmonis.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-5 bg-light" id="tips">
+    <div class="container">
+      <a name="fakta"><h2 class="fw-bold text-center pb-4">Tips Berwisata ke Singapura</h2></a>
+      <hr class="mx-auto border-danger border-3 opacity-75 mb-5">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="mb-5">
+            <h3 class="fw-semibold mb-3">1. Gunakan MRT untuk Keliling Kota</h3>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Mass Rapid Transit (MRT) Singapura adalah sistem transportasi umum terbaik di Asia. Hampir semua destinasi wisata utama dapat dicapai dengan MRT dalam waktu singkat. Belilah EZ-Link Card di stasiun mana saja dengan deposit SGD 5 — kartu ini juga berlaku untuk bus dan dapat di-top up kapan saja.
+            </p>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Hindari menggunakan taksi atau ride-hailing pada jam sibuk (07.00–09.30 dan 17.30–20.00) karena tarif peak hour jauh lebih mahal. MRT beroperasi mulai pukul 05.30 hingga 00.30, menjangkau hampir seluruh penjuru pulau dengan tepat waktu dan bersih.
+            </p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="fw-semibold mb-3">2. Manfaatkan Destinasi Gratis</h3>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Singapura memiliki banyak destinasi wisata berkualitas yang tidak memungut biaya masuk. Gardens by the Bay (area outdoor Supertree Grove), Merlion Park, Chinatown, Little India, Kampong Glam, Haji Lane, East Coast Park, dan Singapore Botanic Gardens semuanya gratis untuk dikunjungi.
+            </p>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              National Museum of Singapore dan berbagai galeri seni juga sering mengadakan hari masuk gratis. Cek situs Visit Singapore (visitsingapore.com) sebelum berangkat untuk mengetahui promo dan event yang sedang berlangsung selama kunjungan Anda.
+            </p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="fw-semibold mb-3">3. Makan di Hawker Centre agar Hemat</h3>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Hawker Centre adalah warisan kuliner Singapura yang telah diakui UNESCO sebagai budaya tak benda umat manusia. Di sini Anda bisa menikmati hidangan autentik seperti Hainanese Chicken Rice, Char Kway Teow, Laksa, Roti Prata, dan Nasi Padang dengan harga mulai dari SGD 3–6 per porsi.
+            </p>
+
+            <div class="ratio ratio-16x9 my-4 mx-auto" style="max-width: 600px;">
+              <iframe src="https://www.youtube.com/embed/wvjgDDZhIuU" title="Rekomendasi Wisata Singapura Terbaik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Hawker Centre terbaik yang wajib dikunjungi antara lain Maxwell Food Centre di Chinatown, Lau Pa Sat di CBD, Tekka Centre di Little India, dan Old Airport Road Food Centre yang menjadi favorit warga lokal. Datanglah sebelum jam makan siang untuk menghindari antrean panjang.
+            </p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="fw-semibold mb-3">4. Perhatikan Aturan dan Etika Lokal</h3>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Singapura dikenal dengan penegakan hukum yang ketat. Merokok di tempat umum, membuang sampah sembarangan, dan mengunyah permen karet di area publik dapat dikenakan denda besar. Tidak ada toleransi untuk vandalisme — bahkan stiker sembarangan pun bisa berujung denda.
+            </p>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Di MRT dan fasilitas umum, bersikaplah tertib dan tenang. Membawa makanan dan minuman ke dalam kereta dilarang keras. Berpakaian sopan saat mengunjungi tempat ibadah seperti masjid, kuil Hindu, dan pagoda Buddha — beberapa tempat menyediakan kain penutup gratis untuk tamu.
+            </p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="fw-semibold mb-3">5. Waktu Terbaik untuk Berkunjung</h3>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Singapura beriklim tropis dengan suhu 25–35°C sepanjang tahun, sehingga dapat dikunjungi kapan saja. Namun periode Februari–April dan Juli–September umumnya memiliki curah hujan lebih rendah, menjadikannya waktu terbaik untuk wisata luar ruangan.
+            </p>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Hindari berkunjung saat musim liburan sekolah internasional (Juni dan Desember) jika ingin menghindari kepadatan di destinasi populer. Sebaliknya, justru kunjungi saat festival besar seperti Chinese New Year, Deepavali, atau Hari Raya Idul Fitri untuk menyaksikan perayaan budaya yang meriah dan autentik.
+            </p>
+          </div>
+
+          <div class="mb-0">
+            <h3 class="fw-semibold mb-3">6. Visa dan Dokumen Perjalanan</h3>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Warga Negara Indonesia (WNI) tidak memerlukan visa untuk kunjungan wisata ke Singapura hingga 30 hari. Pastikan paspor Anda masih berlaku minimal 6 bulan sejak tanggal kedatangan, dan siapkan bukti reservasi hotel serta tiket pulang sebagai dokumen pendukung saat imigrasi.
+            </p>
+            <p class="text-secondary mb-3" style="line-height: 1.8;">
+              Bandara Changi Singapura yang telah berkali-kali dinobatkan sebagai bandara terbaik dunia melayani penerbangan langsung dari Jakarta (CGK/HLP), Surabaya, Bali, dan kota-kota besar Indonesia lainnya. Waktu penerbangan dari Jakarta sekitar 1 jam 40 menit.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12">
+          <h5 class="fw-bold text-danger mb-3">Budaya Singapura</h5>
+          <p class="text-white-50" style="line-height: 1.8;">
+            Sistem Informasi Pemajuan Kebudayaan Singapura. Proyek ini disusun sebagai pemenuhan Tugas Besar Web Dasar tahun ajaran 2025/2026.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Tautan Cepat</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+            <li class="mb-2"><a href="sejarah.html" class="text-white-50 text-decoration-none">Sejarah</a></li>
+            <li class="mb-2"><a href="wisata.html" class="text-white-50 text-decoration-none">Wisata</a></li>
+            <li class="mb-2"><a href="budaya.html" class="text-white-50 text-decoration-none">Budaya & Tradisi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3">Waktu Singapura</h5>
+          <div class="p-3 bg-secondary bg-opacity-25 rounded border border-secondary text-center">
+            <p id="tanggal-singapura" class="text-white fw-semibold font-montserrat mb-0">01/01/2000</p>
+            <span id="jam-singapura" class="fs-3 fw-bold font-monospace text-warning">00:00:00</span>
+            <div class="text-white-50 small">SGT (Singapore Time)</div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-dark my-4 opacity-100">
+      <div class="text-center text-white-50 small">
+        <p class="mb-2">&copy; <span id="tahun-automatic"></span> Hak Cipta Dilindungi.</p>
+        <p class="mb-0 text-white">
+          <strong>2572013</strong> Kenneth Ansell Hansjaya &nbsp;|&nbsp;
+          <strong>2572015</strong> Steven Theodore Alden &nbsp;|&nbsp;
+          <strong>2572047</strong> Kevin Wijaya
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="btn-ke-atas">&uparrow;</a>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -12,7 +12,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #dc3545 !important; /* Warna merah khas Bootstrap (danger) */
+  color: #dc3545 !important;
 }
 
 .logo img {
@@ -129,14 +129,12 @@ body {
   margin-bottom: 50px;
 }
 
-/* --- Styling Section Pengantar Singkat --- */
 .pengantar {
   padding: 70px 20px 40px; 
   background-color: #ffffff;
   text-align: center; 
 }
 
-/* Membatasi lebar teks agar lebih nyaman dibaca (tidak terlalu memanjang) */
 .pengantar-content {
   max-width: 800px;
   margin: 0 auto; 
@@ -150,7 +148,6 @@ body {
   display: inline-block;
 }
 
-/* Garis hiasan kecil di bawah judul agar terlihat lebih elegan */
 .pengantar-content h2 {
   display: inline-block;
   font-size: 2.2rem;
@@ -192,7 +189,6 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Bagian Lokasi */
 .lokasi {
   padding: 80px 10px;
   background-color: #ffffff;
@@ -210,7 +206,7 @@ body {
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
-/* Map terlihat lebar */
+
 .map-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -223,7 +219,6 @@ body {
   width: 100%;
 }
 
-/* Large Desktop */
 @media screen and (max-width: 1200px) {
   .hero {
     padding: 50px 40px;
@@ -238,8 +233,7 @@ body {
     max-width: 420px;
   }
 }
- 
-/* Tablet Landscape / Small Desktop */
+
 @media screen and (max-width: 992px) {
   .hero {
     flex-direction: column;
@@ -280,7 +274,6 @@ body {
   }
 }
  
-/* Tablet Portrait (max 768px) */
 @media screen and (max-width: 768px) {
   .hero {
     padding: 30px 20px;
@@ -334,7 +327,6 @@ body {
   }
 }
  
-/* Mobile */
 @media screen and (max-width: 480px) {
   .hero {
     padding: 25px 15px;
