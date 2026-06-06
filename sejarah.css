@@ -74,3 +74,70 @@ p.mb-3 {
   color: #ffffff;
   transform: translateY(-4px); /* Tombol sedikit terangkat */
 }
+
+/* Tablet Landscape */
+@media screen and (max-width: 992px) {
+  .hero-bergambar {
+    background-position: center center;
+    border-radius: 10px;
+  }
+  .btn-ke-atas {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .gambar1 {
+    border-radius: 10px;
+  }
+}
+ 
+/* Tablet Portrait */
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+  .hero-bergambar {
+    border-radius: 8px;
+    background-position: center top;
+  }
+  p.mb-3 {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+  .btn-ke-atas {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    bottom: 18px;
+    right: 18px;
+  }
+}
+ 
+/* Mobile */
+@media screen and (max-width: 480px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+  .hero-bergambar {
+    border-radius: 6px;
+    min-height: 200px;
+  }
+  p.mb-3 {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  .gambar1 {
+    border-radius: 8px;
+  }
+  .btn-ke-atas {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+ 
