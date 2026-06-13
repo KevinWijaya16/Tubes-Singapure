@@ -136,3 +136,41 @@ p.mb-3 {
     right: 15px;
   }
 }
+ .carousel-item .gambar2 {
+  height: 75vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+ .carousel-item .gambar1 {
+  height: 75vh;
+  object-fit: cover;
+}
+.scroll-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  /* Menyembunyikan scrollbar di Firefox dan IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+/* Menyembunyikan scrollbar di Chrome, Safari, dan Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.card-geser {
+  flex: 0 0 auto !important;
+  width: 300px !important;
+  scroll-snap-align: start;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .height-50 .carousel-item img {
+    height: 40vh;
+  }
+}
