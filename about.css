@@ -1,0 +1,339 @@
+/* ===== ABOUT HERO ===== */
+.about-hero {
+  padding: 70px 20px 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeKiri 1.2s ease forwards;
+}
+
+.about-hero-content h1 {
+  font-size: 2.4rem;
+  color: #120a73;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.tim-more {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: #dc3545;
+  font-weight: 600;
+  transition: letter-spacing 0.2s ease;
+}
+
+.tim-card:hover .tim-more {
+  letter-spacing: 0.5px;
+}
+
+.modal-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.skill-tag {
+  background: #f1f3f5;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #dee2e6;
+}
+
+/* ===== STAT CARDS ===== */
+.about-stats {
+  margin-top: 40px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 14px;
+  padding: 24px 16px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: #dc3545;
+  transform: translateY(-4px);
+}
+
+.stat-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #120a73;
+  line-height: 1.2;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.82rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ===== TUJUAN LIST ===== */
+.tujuan-list {
+  background: #f8f9fa;
+  border-radius: 14px;
+  padding: 24px 20px;
+}
+
+.tujuan-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.tujuan-item:last-child {
+  margin-bottom: 0;
+}
+
+.tujuan-item span {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tujuan-item p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== LATAR BELAKANG ===== */
+.about-latar {
+  background-color: #fcfcfc;
+}
+
+.about-latar h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+.about-quote {
+  background: linear-gradient(135deg, #120a73 0%, #dc3545 100%);
+  border-radius: 16px;
+  padding: 36px 32px;
+  color: #fff;
+  position: relative;
+}
+
+.about-quote .quote-icon {
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0.4;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.about-quote p {
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ===== TIM PENGEMBANG ===== */
+.about-tim h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.tim-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 24px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.tim-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+.tim-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #120a73, #dc3545);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.tim-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.tim-desc {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== TEKNOLOGI ===== */
+.about-teknologi h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.tech-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px 16px;
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 14px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-badge:hover {
+  border-color: #dc3545;
+  transform: translateY(-4px);
+}
+
+.tech-badge:hover .tim-more {
+  letter-spacing: 0.5px;
+}
+
+.tech-icon {
+  font-size: 2.2rem;
+}
+
+.tech-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ===== REFERENSI ===== */
+.about-referensi h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.referensi-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.referensi-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.referensi-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ref-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.referensi-item strong {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.referensi-item p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-p {
+    text-align: center;
+  }
+
+  .about-quote {
+    padding: 24px 20px;
+  }
+
+  .tim-card {
+    padding: 28px 20px;
+  }
+
+  .referensi-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-hero {
+    padding: 50px 15px 35px;
+  }
+
+  .tech-badge {
+    padding: 20px 12px;
+  }
+}
