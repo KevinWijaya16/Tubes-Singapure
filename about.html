@@ -14,37 +14,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="logo" height="40">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="logo" height="40">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold gap-lg-3">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="sejarah.html">Sejarah</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="budaya.html" role="button" data-bs-toggle="dropdown">
+              Budaya
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-bold gap-lg-3">
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="sejarah.html">Sejarah</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
-                    Budaya
-                    </a>
-                    <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="budaya.html">Tionghoa</a></li>
-                    <li><a class="dropdown-item" href="#">Melayu</a></li>
-                    <li><a class="dropdown-item" href="#">India</a></li>
-                    <li><a class="dropdown-item" href="#">Peranakan</a></li>
-                    <li><a class="dropdown-item" href="#">Eurasia</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-dark" href="wisata.html">Wisata</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="galeri.html">Galeri</a></li>
-                <li class="nav-item"><a class="nav-link text-dark active" href="about.html">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+            <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item" href="budaya.html#tionghoa">Tionghoa</a></li>
+              <li><a class="dropdown-item" href="budaya.html#melayu">Melayu</a></li>
+              <li><a class="dropdown-item" href="budaya.html#india">India</a></li>
+              <li><a class="dropdown-item" href="budaya.html#peranakan">Peranakan</a></li>
+              <li><a class="dropdown-item" href="budaya.html#eurasia">Eurasia</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link text-dark" href="wisata.html">Wisata</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
 
   <!-- Banner -->
     <section class="banner">
@@ -209,15 +213,24 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="tim-card text-center shadow-sm" data-bs-toggle="modal" data-bs-target="#modalKevin" style="cursor:pointer;">
-                        <div class="tim-avatar">KW</div>
-                        <h5 class="fw-bold mt-3 mb-1">Kevin Wijaya</h5>
-                        <p class="tim-role">NRP: 2572047</p>
-                        <p class="tim-desc">ISI .</p>
-                        <span class="tim-more">Lihat selengkapnya →</span>
+             <div class="col-md-4">
+                <div class="tim-card text-center shadow-sm" data-bs-toggle="modal" data-bs-target="#modalKevin" style="cursor:pointer;">
+                    <div class="tim-avatar">KW</div>
+                    <h5 class="fw-bold mt-3 mb-1">Kevin Wijaya</h5>
+                    <p class="tim-role">NRP: 2572047</p>
+                    <p class="tim-desc">
+                        Membuat logo website, mengembangkan homepage awal, dan bertanggung jawab penuh atas halaman Budaya.
+                    </p>
+
+                    <div class="modal-skills mt-2 justify-content-center">
+                        <span class="skill-tag">Logo Website</span>
+                        <span class="skill-tag">Homepage</span>
+                        <span class="skill-tag">Budaya</span>
                     </div>
+
+                    <span class="tim-more mt-2">Lihat selengkapnya →</span>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -279,29 +292,35 @@
     </div>
 
     <div class="modal fade" id="modalKevin" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 shadow-lg">
-                <div class="modal-header border-0 pb-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body text-center px-4 pb-4">
-                    <div class="tim-avatar mx-auto mb-3" style="width:90px;height:90px;font-size:1.8rem;">KW</div>
-                    <h5 class="fw-bold mb-1">Kevin Wijaya</h5>
-                    <p class="tim-role">NRP: 2572047 &nbsp;·&nbsp; Program Studi Informatika</p>
-                    <hr>
-                    <p class="text-muted" style="font-size:0.95rem;line-height:1.8;text-align:justify;">
-                        ISI
-                    </p>
-                    <div class="modal-skills mt-3">
-                        <span class="skill-tag">ISI</span>
-                        <span class="skill-tag">ISI</span>
-                        <span class="skill-tag">ISI</span>
-                        <span class="skill-tag">ISI</span>
-                    </div>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center px-4 pb-4">
+                <div class="tim-avatar mx-auto mb-3" style="width:90px;height:90px;font-size:1.8rem;">KW</div>
+                <h5 class="fw-bold mb-1">Kevin Wijaya</h5>
+                <p class="tim-role">NRP: 2572047 &nbsp;·&nbsp; Program Studi Informatika</p>
+
+                <hr>
+
+                <p class="text-muted" style="font-size:0.95rem;line-height:1.8;text-align:justify;">
+                    Kevin bertanggung jawab dalam pembuatan <strong>logo website</strong> sebagai
+                    identitas visual proyek, mengembangkan <strong>halaman Homepage</strong> yang
+                    menjadi tampilan utama website, serta mengerjakan halaman
+                    <strong>Budaya</strong> yang berisi informasi mengenai keberagaman budaya
+                    dan tradisi yang menjadi fokus pembahasan dalam website ini.
+                </p>
+
+                <div class="modal-skills mt-3">
+                    <span class="skill-tag">Logo Website</span>
+                    <span class="skill-tag">Homepage</span>
+                    <span class="skill-tag">Budaya</span>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <section class="about-teknologi py-5">
         <div class="container">

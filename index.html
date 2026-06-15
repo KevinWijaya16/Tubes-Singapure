@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="img/logo.png" alt="logo" height="40">
       </a>
 
@@ -26,15 +26,15 @@
           <li class="nav-item"><a class="nav-link text-dark" href="sejarah.html">Sejarah</a></li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="budaya.html" role="button" data-bs-toggle="dropdown">
               Budaya
             </a>
             <ul class="dropdown-menu border-0 shadow">
-              <li><a class="dropdown-item" href="budaya.html/">Tionghoa</a></li>
-              <li><a class="dropdown-item" href="#">Melayu</a></li>
-              <li><a class="dropdown-item" href="#">India</a></li>
-              <li><a class="dropdown-item" href="#">Peranakan</a></li>
-              <li><a class="dropdown-item" href="#">Eurasia</a></li>
+              <li><a class="dropdown-item" href="budaya.html#tionghoa">Tionghoa</a></li>
+              <li><a class="dropdown-item" href="budaya.html#melayu">Melayu</a></li>
+              <li><a class="dropdown-item" href="budaya.html#india">India</a></li>
+              <li><a class="dropdown-item" href="budaya.html#peranakan">Peranakan</a></li>
+              <li><a class="dropdown-item" href="budaya.html#eurasia">Eurasia</a></li>
             </ul>
           </li>
 
@@ -44,11 +44,34 @@
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
 
   <section class="banner">
-    <img src="img/cover.png" alt="cover">
-  </section>
+  <div id="carouselCover" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselCover" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselCover" data-bs-slide-to="1"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/cover.png" class="d-block w-100" alt="Cover 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/cover2.png" class="d-block w-100" alt="Cover 2">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCover" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCover" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
 
   <section class="hero">
     <div class="hero-text">
