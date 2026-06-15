@@ -1,11 +1,11 @@
-const cursor = document.querySelector('.cursor');
+// const cursor = document.querySelector('.cursor');
 
-if (cursor) {
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.top = e.clientY + 'px';
-    cursor.style.left = e.clientX + 'px';
-  });
-}
+// if (cursor) {
+//   document.addEventListener('mousemove', (e) => {
+//     cursor.style.top = e.clientY + 'px';
+//     cursor.style.left = e.clientX + 'px';
+//   });
+// }
 
 const elemenTahun = document.getElementById('tahun-automatic');
 if (elemenTahun) {
