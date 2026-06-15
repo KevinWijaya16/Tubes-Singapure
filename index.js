@@ -40,3 +40,34 @@ function JamDigitalSingapura() {
 }
 setInterval(JamDigitalSingapura, 1000);
 JamDigitalSingapura(); // Panggil sekali untuk menampilkan jam segera saat halaman dimuat
+
+// Memastikan semua elemen halaman sudah siap sebelum skrip berjalan
+document.addEventListener("DOMContentLoaded", function () {
+    
+    // 1. Ambil semua link pilihan di dalam dropdown (Tionghoa, Melayu, dll)
+    const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+    
+    dropdownItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            
+            // 2. Cari tombol dropdown utamanya ("Budaya")
+            const dropdownEl = document.querySelector('.dropdown-toggle');
+            // Ambil fungsi bawaan Bootstrap dari tombol tersebut
+            const bootstrapDropdown = bootstrap.Dropdown.getInstance(dropdownEl);
+            
+            // 3. Perintahkan Bootstrap untuk langsung menutup menu dropdown-nya
+            if (bootstrapDropdown) {
+                bootstrapDropdown.hide();
+            }
+
+            // 4. KHUSUS LAYAR HP: Jika menu navbar sedang terbuka, otomatis tutup juga
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                const bootstrapCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bootstrapCollapse) {
+                    bootstrapCollapse.hide();
+                }
+            }
+        });
+    });
+});
