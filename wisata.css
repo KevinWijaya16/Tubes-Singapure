@@ -91,6 +91,9 @@ p.mb-3 {
   .gambar1 {
     border-radius: 10px;
   }
+  .gambar2{
+    border-radius: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -128,6 +131,9 @@ p.mb-3 {
     text-align: left;
   }
   .gambar1 {
+    border-radius: 8px;
+  }
+  .gambar2 {
     border-radius: 8px;
   }
   .btn-ke-atas {

@@ -58,6 +58,38 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     };
 
+    // ==========================================
+    // LOGIKA MEMORI URL UNTUK SEMUA MODAL
+    // ==========================================
+    
+    // 1. Cek apakah ada Hash (contoh: #modalMRT) di URL saat halaman dimuat
+    if (window.location.hash) {
+      const hash = window.location.hash;
+      const targetModal = document.querySelector(hash);
+      
+      // Jika elemen dengan hash tersebut ada dan merupakan modal, buka otomatis
+      if (targetModal && targetModal.classList.contains('modal')) {
+        const myModal = new bootstrap.Modal(targetModal);
+        myModal.show();
+      }
+    }
+
+    // 2. Tambahkan event listener ke SEMUA modal yang ada di halaman ini
+    const allModals = document.querySelectorAll('.modal');
+    allModals.forEach(function (modal) {
+      
+      // Saat modal apa pun dibuka, tambahkan ID-nya ke URL
+      modal.addEventListener('show.bs.modal', function () {
+        window.history.pushState(null, null, '#' + modal.id);
+      });
+
+      // Saat modal ditutup, bersihkan URL agar rapi kembali
+      modal.addEventListener('hidden.bs.modal', function () {
+        window.history.pushState(null, null, window.location.pathname);
+      });
+      
+    });
+
     updateButtons();
     scrollContainer.addEventListener('scroll', updateButtons);
     window.addEventListener('resize', updateButtons);

@@ -5,19 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wisata Singapura</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="wisata.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body id="top">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="wisata.js"></script>
-
-  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -48,7 +43,7 @@
 
           <li class="nav-item"><a class="nav-link text-dark" href="wisata.html">Wisata</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="galeri.html">Galeri</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="about.html">Tentang</a></li>
         </ul>
       </div>
     </div>
@@ -65,7 +60,6 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <!-- Catatan: Pastikan path gambar ini benar di folder project Anda -->
         <img src="/img/marinabay.jpg" class="d-block w-100 gambar1" alt="MarinaBaySands">
       </div>
       <div class="carousel-item">
@@ -103,26 +97,17 @@
             etnis, dan menikmati pengalaman kuliner yang tak tertandingi.</p>
         </div>
       </div>
-      <p class="fs-4">Klik link ini untuk langsung ke bagiannya</p>
-      <p class="pb-4">
-        <a href="#marinabay"
-          class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Marina
-          Bay</a> |
-        <a href="#gardens"
-          class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Gardens
-          By The Bay</a> |
-        <a href="#sentosa"
-          class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Sentosa
-          Island</a> |
-        <a href="#budaya"
-          class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Kawasan
-          Budaya</a> |
-        <a href="#alam"
-          class="link-danger link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Taman
-          &amp; Alam</a>
-      </p>
-      <a href="#tips" class="link-primary link-underline-opacity-0 link-underline-opacity-50-hover">
-        <p class="fw-bold fs-5">Tips Wisata bisa dipencet sebelah sini</p>
+      <p class="fs-3 text-secondary mt-2">Lompat cepat ke destinasi:</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+        <a href="#marinabay" class="btn btn-outline-danger rounded-pill px-4">Marina Bay</a>
+        <a href="#gardens" class="btn btn-outline-danger rounded-pill px-4">Gardens By The Bay</a>
+        <a href="#sentosa" class="btn btn-outline-danger rounded-pill px-4">Sentosa Island</a>
+        <a href="#budaya" class="btn btn-outline-danger rounded-pill px-4">Kawasan Budaya</a>
+        <a href="#alam" class="btn btn-outline-danger rounded-pill px-4">Taman & Alam</a>
+      </div>
+      <a href="#tips" class="btn btn-outline-primary btn-sm px-4 py-3 shadow-sm rounded-pill fw-bold" style="transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Tips Wisata bisa dilihat disini</a>
+      <a href="#lainnya" class="btn btn-outline-danger btn-sm px-4 py-3 shadow-sm rounded-pill fw-bold" style="transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        Jelajahi Wisata Lainnya
       </a>
     </div>
     <hr class="mx-auto border-danger border-3 opacity-75">
@@ -137,7 +122,7 @@
       <div class="col-md-6 mb-3 mb-md-0">
         <div class="bg-secondary rounded shadow-sm d-flex justify-content-center align-items-center gambar1"
           style="height: 400px;">
-          <img src="img/marinabay.jpg" class="img-fluid rounded shadow-sm w-100"
+          <img src="img/Marinabay.jpg" class="img-fluid rounded shadow-sm w-100"
             style="height: 400px; object-fit: cover;" alt="Marina Bay Sands">
         </div>
       </div>
@@ -316,7 +301,7 @@
         class="w-100 rounded shadow-sm" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     </div>
-
+    </div>
     </div>
   </section>
   <section class="py-5 pb-3">
@@ -325,23 +310,6 @@
         <h2 class="fw-bold text-center pb-4">Tempat Wisata Lainnya di Singapura</h2>
       </a>
       <div class="position-relative">
-        <!-- Tombol Kiri Pojok -->
-        <button id="btnScrollLeftLawat" class="btn btn-danger position-absolute top-50 start-0 translate-middle-y shadow"
-          style="z-index: 10; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; margin-left: -115px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-          </svg>
-        </button>
-        <!-- Tombol Kiri -->
-        <button id="btnScrollLeft" class="btn btn-danger position-absolute top-50 start-0 translate-middle-y shadow tombol"
-          style="z-index: 10; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; margin-left: -60px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-          </svg>
-        </button>
         <div class="scroll-container" id="scrollWisataLainnya">
           <!-- Jewel -->
           <div class="card card-geser shadow-sm">
@@ -435,20 +403,43 @@
           </div>
 
         </div>
-        <!-- Tombol Kanan -->
-        <button id="btnScrollRight" class="btn btn-danger position-absolute top-50 start-100 translate-middle-y shadow tombol">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg>
-        </button>
-        <button id="btnScrollRightLawat" class="btn btn-danger position-absolute top-50 start-100 translate-middle-y shadow tombol-pojok">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </button>
+        <!-- Controls Container -->
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <!-- Tombol Kiri Pojok -->
+          <button id="btnScrollLeftLawat" class="btn btn-danger shadow"
+            style="border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+          </button>
+          <!-- Tombol Kiri -->
+          <button id="btnScrollLeft" class="btn btn-danger shadow"
+            style="border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+          </button>
+          <!-- Tombol Kanan -->
+          <button id="btnScrollRight" class="btn btn-danger shadow"
+            style="border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <!-- Tombol Kanan Pojok -->
+          <button id="btnScrollRightLawat" class="btn btn-danger shadow"
+            style="border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+              <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Kumpulan Modal (Popup) -->
@@ -463,13 +454,14 @@
             <div class="modal-body">
               <img src="img/jewel.jpg" class="img-fluid rounded mb-3 w-100" style="height: 250px; object-fit: cover;"
                 alt="Jewel Changi">
-              <p>Jewel Changi Airport adalah kompleks ritel dan hiburan bertema alam bernuansa futuristik yang terhubung
+              <p><b>Jewel Changi Airport</b> adalah kompleks ritel dan hiburan bertema alam bernuansa futuristik yang terhubung
                 dengan salah satu bandara terbaik di dunia. Daya tarik utamanya adalah HSBC Rain Vortex, air terjun
                 dalam ruangan tertinggi di dunia setinggi 40 meter yang dikelilingi oleh Shiseido Forest Valley, taman
                 bertingkat dengan ribuan pohon dan tanaman. Di sini, pengunjung bisa berbelanja, menikmati kuliner, atau
                 bersantai sebelum penerbangan.</p>
             </div>
             <div class="modal-footer">
+              <a href="https://www.jewelchangiairport.com/" target="_blank" class="btn btn-primary">Kunjungi Website Resmi</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -487,13 +479,14 @@
             <div class="modal-body">
               <img src="img/orchard.jpg" class="img-fluid rounded mb-3 w-100" style="height: 250px; object-fit: cover;"
                 alt="Orchard Road">
-              <p>Orchard Road adalah jantung pusat perbelanjaan di Singapura yang membentang sepanjang 2,2 kilometer.
+              <p><b>Orchard Road</b> adalah jantung pusat perbelanjaan di Singapura yang membentang sepanjang 2,2 kilometer.
                 Jalanan ini dipenuhi oleh mal-mal megah seperti ION Orchard, Ngee Ann City, dan Paragon yang menawarkan
                 merek-merek mewah internasional. Selain belanja, Orchard Road juga menjadi tempat bersantap dengan
                 berbagai restoran berbintang, serta lokasi yang indah untuk berjalan-jalan, terutama saat lampu hias
                 dinyalakan di malam hari dan perayaan akhir tahun.</p>
             </div>
             <div class="modal-footer">
+              <a href="https://id.wikipedia.org/wiki/Jalan_Orchard" target="_blank" class="btn btn-primary">Baca di Wikipedia</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -513,13 +506,11 @@
             <div class="modal-body">
               <img src="img/City_Square_Mall_at_night,_Singapore,_December_2025.jpg"
                 class="img-fluid rounded mb-3 w-100" style="height: 250px; object-fit: cover;" alt="City Square">
-              <p>Merlion Park adalah rumah bagi maskot resmi Singapura: Sang Merlion, makhluk mitos dengan kepala singa
-                (melambangkan nama asli Singapura, Singapura yang berarti 'Kota Singa') dan tubuh ikan (mengingatkan
-                pada awal mulanya sebagai desa nelayan). Patung setinggi 8,6 meter yang memancurkan air dari mulutnya
-                ini menjadi salah satu spot foto wajib bagi wisatawan dengan latar belakang lanskap Marina Bay yang
-                menakjubkan.</p>
+              <p><b>City Square</b> adalah sebuah pusat perbelanjaan yang unik karena lokasinya yang strategis di dekat stasiun MRT Farrer Park, menjadikannya tempat yang nyaman untuk berbelanja sambil berwisata. Mall ini tidak hanya menawarkan berbagai macam toko, mulai dari merek internasional hingga butik lokal, tetapi juga menyediakan fasilitas keluarga yang lengkap. 
+                </p>
             </div>
             <div class="modal-footer">
+              <a href="https://www.citysquaremall.com.sg/" target="_blank" class="btn btn-primary">Kunjungi Website Resmi</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -536,13 +527,12 @@
             </div>
             <div class="modal-body">
               <img src="img/iFlySingapore.jpg" class="img-fluid rounded mb-3 w-100"
-                style="height: 250px; object-fit: cover;" alt="Gardens by the Bay">
-              <p>Terletak di pusat kota, Gardens by the Bay adalah mahakarya hortikultura dan desain arsitektur seluas
-                101 hektare. Tempat ini sangat terkenal dengan Supertree Grove, struktur seperti pohon raksasa yang
-                menyala di malam hari. Di dalamnya juga terdapat Flower Dome dan Cloud Forest, dua rumah kaca ikonik
-                yang menampilkan keanekaragaman flora dari seluruh dunia di lingkungan yang terkontrol.</p>
+                style="height: 250px; object-fit: cover;" alt="AltitudeX">
+              <p><b>AltitudeX</b> adalah pusat hiburan vertical yang menawarkan pengalaman seru seperti indoor skydiving di iFly Singapore, flight simulation, dan berbagai aktivitas ekstrem lainnya. 
+                </p>
             </div>
             <div class="modal-footer">
+              <a href="https://www.altitudex.sg/" target="_blank" class="btn btn-primary">Kunjungi Website Resmi</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -571,6 +561,7 @@
               </p>
             </div>
             <div class="modal-footer">
+              <a href="https://www.capitaland.com/sg/malls/funan/en.html" target="_blank" class="btn btn-primary">Kunjungi Website Resmi</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -597,6 +588,7 @@
                 Singapura</p>
             </div>
             <div class="modal-footer">
+              <a href="https://www.ionorchard.com/en" target="_blank" class="btn btn-primary">Kunjungi Website Resmi</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -626,6 +618,7 @@
                 pusat servis ponsel, membuat tempat ini selalu hidup dan ramai dikunjungi setiap harinya.</p>
             </div>
             <div class="modal-footer">
+              <a href="https://id.wikipedia.org/wiki/Lucky_Plaza_(Singapura)" target="_blank" class="btn btn-primary">Baca di Wikipedia</a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
@@ -678,7 +671,10 @@
                         <div class="col">Jarak</div>
                       </div>
                       <div class="row text-center align-items-center">
-                        <div class="col fw-bold text-danger">Jalur Utara Selatan (North-South Line)</div>
+                        <div class="col fw-bold text-danger"><a
+                            href="https://id.wikipedia.org/wiki/Jalur_Utara_Selatan_(MRT_Singapura)"
+                            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Jalur
+                            Utara Selatan (North-South Line)</a></div>
                         <div class="col">7 November 1987</div>
                         <div class="col">2034</div>
                         <div class="col">
@@ -698,12 +694,12 @@
                         <div class="col">12 Desember 1987</div>
                         <div class="col">—</div>
                         <div class="col">
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Pasir_Ris"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Pasir
                               Ris</a></div>
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Changi_Airport"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Changi
-                              Airport</a><a href="#"
+                              Airport</a> <a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Tuas_Link"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Tuas
                               Link</a></div>
                         </div>
@@ -716,12 +712,10 @@
                         <div class="col">28 Mei 2009</div>
                         <div class="col">2026</div>
                         <div class="col">
-                          <div><a href="#"
-                              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Dhoby
-                              Ghaut</a><a href="#"
-                              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Harbourfront</a>
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Dhoby_Ghaut" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Dhoby Ghaut</a> 
+                              <a href="https://id.wikipedia.org/wiki/Stasiun_MRT_HarbourFront" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Harbourfront</a>
                           </div>
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Marina_Bay"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Marina
                               Bay</a></div>
                         </div>
@@ -734,10 +728,10 @@
                         <div class="col">31 Januari 2020</div>
                         <div class="col">2026</div>
                         <div class="col">
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Woodlands_North"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Woodlands
                               North</a></div>
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Bayshore"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Bayshore</a>
                           </div>
                         </div>
@@ -756,10 +750,10 @@
                         <div class="col">20 Juni 2003</div>
                         <div class="col">—</div>
                         <div class="col">
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_HarbourFront"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">HarbourFront</a>
                           </div>
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Punggol"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Punggol</a>
                           </div>
                         </div>
@@ -772,10 +766,10 @@
                         <div class="col">22 Desember 2013 (Stage 1)</div>
                         <div class="col">2026</div>
                         <div class="col">
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT/LRT_Bukit_Panjang"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Bukit
                               Panjang</a></div>
-                          <div><a href="#"
+                          <div><a href="https://id.wikipedia.org/wiki/Stasiun_MRT_Expo"
                               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Expo</a>
                           </div>
                         </div>
@@ -1019,7 +1013,7 @@
     </div>
   </footer>
 
-  <!-- <a href="#top" class="btn-ke-atas">&uparrow;</a> -->
+  <a href="#top" class="btn-ke-atas">&uparrow;</a>
 
   <script src="index.js"></script>
   
