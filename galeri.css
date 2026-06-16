@@ -1,5 +1,4 @@
 /* galeri */
-/* ===== GALERI ALBUM SINGAPURA ===== */
 
 body{
     background: linear-gradient(135deg,#f8fafc,#eef2ff);
@@ -53,17 +52,7 @@ body{
     transition: transform .8s ease;
 }
 
-/* Efek Hover */
-.gallery-item:hover{
-    transform: translateY(-10px);
-    box-shadow:
-        0 20px 45px rgba(0,0,0,.18),
-        0 10px 20px rgba(0,0,0,.08);
-}
 
-.gallery-item:hover img{
-    transform: scale(1.12);
-}
 
 /* Overlay */
 .overlay{
@@ -174,7 +163,7 @@ body{
     }
 
     .gallery-item img{
-        height: 260px;
+        height: 400px;
     }
 
     .gallery-grid{
