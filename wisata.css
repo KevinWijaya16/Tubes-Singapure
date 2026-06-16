@@ -28,6 +28,8 @@ body {
   border-radius: 15px;
 }
 
+
+
 .overlay-gelap {
   position: absolute;
   top: 0;
@@ -146,6 +148,7 @@ p.mb-3 {
   height: 75vh;
   object-fit: cover;
 }
+
 .scroll-container {
   display: flex !important;
   flex-wrap: nowrap !important;
@@ -179,3 +182,5 @@ p.mb-3 {
     height: 40vh;
   }
 }
+
+

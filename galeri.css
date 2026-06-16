@@ -1,0 +1,183 @@
+/* galeri */
+/* ===== GALERI ALBUM SINGAPURA ===== */
+
+body{
+    background: linear-gradient(135deg,#f8fafc,#eef2ff);
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery-section{
+    padding: 80px 0;
+}
+
+.gallery-section h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.gallery-section p{
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+/* Grid Album */
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+/* Kartu Foto */
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: white;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08),
+        0 1px 8px rgba(0,0,0,.04);
+    transition: all .4s ease;
+}
+
+.gallery-item.large{
+    grid-column: span 2;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    transition: transform .8s ease;
+}
+
+/* Efek Hover */
+.gallery-item:hover{
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.18),
+        0 10px 20px rgba(0,0,0,.08);
+}
+
+.gallery-item:hover img{
+    transform: scale(1.12);
+}
+
+/* Overlay */
+.overlay{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.4),
+        transparent
+    );
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.gallery-item:hover .overlay{
+    opacity: 1;
+}
+
+.overlay h4{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    transform: translateY(30px);
+    transition: .4s ease;
+}
+
+.gallery-item:hover .overlay h4{
+    transform: translateY(0);
+}
+
+.overlay h4::after{
+    content: " • Singapore";
+    font-size: .9rem;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.gallery-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+    transition: .8s;
+    z-index: 2;
+}
+
+.gallery-item:hover::before{
+    left: 150%;
+}
+
+
+.gallery-item.large img{
+    height: 450px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    height:400px; /* tinggi card kecil */
+}
+
+.gallery-item.large{
+    grid-column:span 2;
+    height:400px; /* tinggi card besar */
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+@media (max-width: 992px){
+    .gallery-item.large{
+        grid-column: span 1;
+    }
+
+    .gallery-item.large img{
+        height: 340px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .gallery-section h1{
+        font-size: 2.2rem;
+    }
+
+    .gallery-item img{
+        height: 260px;
+    }
+
+    .gallery-grid{
+        gap: 18px;
+    }
+}
