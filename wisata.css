@@ -4,6 +4,13 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
+.navbar-nav .nav-link.active {
+    color: #dc3545 !important;
+    font-weight: 700;
+    display: inline-block;
+    width: fit-content;
+    border-bottom: 2px solid #dc3545;
+}
 
 * {
   margin: 0;
@@ -75,6 +82,16 @@ p.mb-3 {
   color: #ffffff;
   transform: translateY(-4px);
 }
+.navbar-brand img {
+
+    width: 160px;
+    height: auto;
+
+    object-fit: contain;
+
+    image-rendering: auto;
+
+}
 
 @media screen and (max-width: 992px) {
   .hero-bergambar {
@@ -115,6 +132,22 @@ p.mb-3 {
     bottom: 18px;
     right: 18px;
   }
+  footer .container,
+    footer .row,
+    footer .col-lg-5,
+    footer .col-lg-3 {
+        text-align: left !important;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+    .navbar-brand img {
+
+        width: 140px;
+        height: auto;
+
+    }
 }
 
 @media screen and (max-width: 480px) {

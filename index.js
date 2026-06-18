@@ -71,3 +71,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    let halamanSekarang = window.location.pathname.split("/").pop();
+
+    if (halamanSekarang === "") {
+        halamanSekarang = "index.html";
+    }
+
+    const navLink = document.querySelectorAll(".navbar-nav .nav-link");
+
+    navLink.forEach(link => {
+        let linkHalaman = link.getAttribute("href");
+
+        if (linkHalaman === halamanSekarang) {
+            link.classList.add("active");
+        }
+    });
+});
